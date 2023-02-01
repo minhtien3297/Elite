@@ -15,7 +15,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        orange: '#FF7F03',
+        orange: {
+          50: '#FF7F03',
+          100: '#E6671C',
+        },
         blue: {
           50: '#50D7E9',
           100: '#4E84FA',

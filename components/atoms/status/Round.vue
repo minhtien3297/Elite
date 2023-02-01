@@ -1,7 +1,7 @@
 <template>
   <span
     v-if="label === LABELS.FEATURED"
-    class="text-transform: inline-block h-[26px] w-[89px] rounded bg-orange py-px px-2 text-sm font-medium uppercase leading-6 text-white"
+    class="text-transform: inline-block h-[26px] w-[89px] rounded bg-orange-50 py-px px-2 text-sm font-medium uppercase leading-6 text-white"
     >{{ LABELS.FEATURED }}</span
   >
   <span
@@ -29,7 +29,7 @@
 <script lang="ts" setup>
 import { LABELS } from '@/constants/common'
 
-defineProps({
-  label: String,
-})
+defineProps<{
+  label: string
+}>()
 </script>

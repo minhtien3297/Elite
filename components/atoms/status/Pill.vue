@@ -11,7 +11,7 @@
   >
   <span
     v-else-if="label === LABELS.URGENT"
-    class="text-transform: rounded-[20px] bg-yellow/30 py-1.5 px-2.5 text-sm font-normal capitalize leading-[18px] text-orange"
+    class="text-transform: rounded-[20px] bg-yellow/30 py-1.5 px-2.5 text-sm font-normal capitalize leading-[18px] text-orange-50"
     >{{ LABELS.URGENT }}</span
   >
 </template>
@@ -19,7 +19,7 @@
 <script lang="ts" setup>
 import { LABELS } from '@/constants/common'
 
-defineProps({
-  label: String,
-})
+defineProps<{
+  label: string
+}>()
 </script>
