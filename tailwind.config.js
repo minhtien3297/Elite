@@ -44,6 +44,11 @@ module.exports = {
     fontFamily: {
       lato: ['"Lato"', ...defaultTheme.fontFamily.sans],
       inter: ['"Inter"', ...defaultTheme.fontFamily.sans],
+      montserrat: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+    },
+
+    container: {
+      center: true,
     },
   },
 
